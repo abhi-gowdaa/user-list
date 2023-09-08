@@ -1,0 +1,19 @@
+
+.button{
+    height: 30px;
+    width:80px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.button:hover{
+
+    background-color: rgb(21, 222, 212);
+    
+    backdrop-filter: blur(80%);
+}
+
+.button:focus {
+    background-color: aquamarine;
+    }
