@@ -9,12 +9,14 @@ function App() {
     setUsers((prevUsers) => [...prevUsers, userData]);
   };
 
-  console.log(users)
+  console.log(users.age)
 
   return (
     <div>
       <AddUser onEntry={addUserHandler} />
+  
       {users.length > 0 && <UserList data={users} />}
+      
     </div>
   );
 

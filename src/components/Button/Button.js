@@ -1,10 +1,11 @@
 import styles from './Button.module.css'
 
-const Button=()=>{
+const Button=(props)=>{
+
 
     return(
         <div>
-           <button type="submit" className={styles.button}>Add user</button>
+           <button type="submit" className={styles.button} onClick={props.btn}>{props.children}</button>
         </div>
      );
 }
